@@ -1,3 +1,5 @@
+import "../App.css"
+
 import React from "react";
 import { MdPhoneInTalk } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
@@ -11,27 +13,24 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaMoon } from "react-icons/fa6";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
-
-
+import { BiSearchAlt } from "react-icons/bi";
 
 
 function Navbar() {
   const [isActive, setActive] = useState(false);
 
- const ToggleClass = (e) => {
+  const ToggleClass = (e) => {
     e.stopPropagation();
 
-   setActive(!isActive);
- };
+    setActive(!isActive);
+  };
 
-
- const handleChild = (e) => {
-     e.stopPropagation();
-
- }
+  const handleChild = (e) => {
+    e.stopPropagation();
+  };
   return (
     <>
-      <div className="text-white     text-lg   font-bold fixed top-0 w-full z-[900]  flex justify-between pr-4 items-center filter backdrop-blur-md ">
+      <div className="text-white  navbar transition-all    text-lg   font-bold fixed top-0 w-full z-[900]  flex justify-between pr-4 items-center filter backdrop-blur-md ">
         <div className="logo bg-gradient-to-r from-[#524cff] to-[#7234a8] p-4 pr-10 mr-5">
           <img
             width={182}
@@ -65,6 +64,8 @@ function Navbar() {
           >
             <CiMenuFries />
           </div>
+          <BiSearchAlt className="text-2xl"/>
+
           <span className="p-3 rounded-full   bg-purple-900 ml-4">
             <MdPhoneInTalk className="  text-3xl" />
           </span>
@@ -73,12 +74,15 @@ function Navbar() {
       </div>
 
       <div
-        className={`fixed text-white z-[999999] w-[100vw]  h-screen bg-[rgba(8, 8, 8, 0.84)] ${
+        className={` navbar-side transition-display ease-in-out delay-1000 duration-1000 fixed text-white z-[999999] w-[100vw]  h-screen bg-[rgba(8, 8, 8, 0.84)] ${
           isActive ? "block" : "hidden"
         }`}
         onClick={ToggleClass}
       >
-        <div className="w-[300px] h-full  pt-5  bg-[#171D26]" onClick={handleChild}>
+        <div
+          className="w-[300px] h-full  pt-5  bg-[#171D26]"
+          onClick={handleChild}
+        >
           <img
             width={182}
             src="https://hooqx.com/wp-content/uploads/2024/02/hq-logo-png-02-2.png"

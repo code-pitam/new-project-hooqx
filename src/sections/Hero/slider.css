@@ -59,7 +59,7 @@
     padding: 1rem;
     font-size: 40px;
     font-weight: bold;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 10px;
   color: white;
 }
 .next {
@@ -91,7 +91,7 @@
 .slider-container:hover .prev:hover,
 .slider-container:hover .next:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(190, 190, 190, 0.6);
   transition: all 0.5s ease-in;
 }
 
@@ -111,8 +111,21 @@
     justify-content: space-between;
     /* background-color: aliceblue; */
     margin: 0 auto;
+    transform: scale(1);
     /* max-width: 1500px; */
+          animation-name: zoom;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition-timing-function: s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes zoom {
+100%{
+    transform: scale(1.1);
+}
+ }
+
 
 .s-content img{
     z-index: -100;
@@ -194,7 +207,20 @@
     filter: hue-rotate(8deg);
     opacity: 0.5;
     background-color: #9900ffc1;
+       animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-in-out;
+  
 }
+@keyframes rotate {
+ 50%{
+transform: rotate(10deg)
+ }
+  
+}
+
+
 
 .shape2{
     position: absolute;
@@ -210,8 +236,18 @@
     z-index: 1;
     filter: hue-rotate(8deg);
     opacity: 0.5;
+
     background-color: #4c037dfc;
+   animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-ou;
 }
+@keyframes example {
+  0%   {top: 35%;}
+  100% {top: 33%;}
+}
+
 .shape3{
      position: absolute;
     right: -50px;

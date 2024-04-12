@@ -6,7 +6,7 @@ import Hero from './sections/Hero/Slider';
 function App() {
 
   return (
-    <main className="relative bg-secondary text-primary bg-[#242525]">
+    <main className="relative bg-secondary text-primary bg-white">
       <Navbar />
       <section className="w-[100vw] relative">
         <Hero />
