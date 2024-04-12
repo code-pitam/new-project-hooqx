@@ -57,7 +57,7 @@ function SliderContent({activeIndex, sliderImage}) {
               srcset=""
             /> */}
 
-            <div className="absolute  bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[#010221] opacity-80"></div>
+            <div className="absolute  bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[#030317eb] opacity-80"></div>
             <div className="shape1"></div>
             <div className="shape2"></div>
             <div className="shape3"></div>
