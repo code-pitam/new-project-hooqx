@@ -31,7 +31,7 @@ function Navbar() {
   return (
     <>
       <div className="text-white  navbar transition-all    text-lg   font-bold fixed top-0 w-full z-[900]  flex justify-between pr-4 items-center filter backdrop-blur-md ">
-        <div className="logo bg-gradient-to-r from-[#524cff] to-[#7234a8] p-4 pr-10 mr-5">
+        <div className="logo bg-gradient-to-r from-[#524cff] to-[#7234a8] p-4 pr-10 mr-5 max-md:mr-10">
           <img
             width={182}
             src="https://hooqx.com/wp-content/uploads/2024/02/hq-logo-png-02-2.png"
@@ -69,7 +69,7 @@ function Navbar() {
           <span className="p-3 rounded-full max-md:hidden   bg-purple-900 ml-4">
             <MdPhoneInTalk className="  text-3xl" />
           </span>
-          <p>+971 4 509 5919</p>
+          <p className="  max-md:hidden">+971 4 509 5919</p>
         </div>
       </div>
 
