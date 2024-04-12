@@ -30,7 +30,7 @@ function Navbar() {
   };
   return (
     <>
-      <div className="text-white  navbar transition-all    text-lg   font-bold fixed top-0 w-full z-[900]  flex justify-between pr-4 items-center filter backdrop-blur-md ">
+      <div className="text-white  navbar transition-all     text-md   font-bold fixed top-0 w-full z-[900]  flex justify-between pr-4 items-center filter backdrop-blur-md ">
         <div className="logo bg-gradient-to-r from-[#524cff] to-[#7234a8] p-4 pr-10 mr-5 max-md:mr-10">
           <img
             width={182}
