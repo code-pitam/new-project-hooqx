@@ -37,7 +37,7 @@ function Slider(props) {
         onclick={(activeIndex) => setActiveIndex(activeIndex)}
       /> */}
 
-      <LowerCard/>
+      {/* <LowerCard/> */}
     </div>
   );
 }
