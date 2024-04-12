@@ -65,8 +65,8 @@ function Navbar() {
             <CiMenuFries />
           </div>
           <BiSearchAlt className="text-2xl" />
-
-          <span className="p-3 rounded-full max-md:hidden   bg-purple-900 ml-4">
+          <div className="border-l  border-slate-500 border-solid	 border-[1px] h-12 ml-3"></div>
+          <span className="p-3 rounded-full max-md:hidden   bg-purple-900 ml-4        ">
             <MdPhoneInTalk className="  text-3xl" />
           </span>
           <p className="  max-md:hidden">+971 4 509 5919</p>
