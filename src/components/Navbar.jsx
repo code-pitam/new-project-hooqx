@@ -66,7 +66,7 @@ function Navbar() {
           </div>
           <BiSearchAlt className="text-2xl"/>
 
-          <span className="p-3 rounded-full   bg-purple-900 ml-4">
+          <span className="p-3 rounded-full max-md:hidden   bg-purple-900 ml-4">
             <MdPhoneInTalk className="  text-3xl" />
           </span>
           <p>+971 4 509 5919</p>
