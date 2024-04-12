@@ -36,7 +36,7 @@ function SliderContent({activeIndex, sliderImage}) {
               >
                 <span class="w-56 h-56 rounded-full rotate-[-40deg] bg-white absolute bottom-0 left-0  ease-out duration-500 transition-all translate-y-[120%] mb-9 mr-9 group-hover:mr-0 group-hover:mb-32 group-hover:-translate-x-[13%]"></span>
                 <span class="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-[#524cff]">
-                  Button Text
+                  Connect Us
                 </span>
                 <FaArrowRightLong className="text-white ml-1 text-xl hover:[#524cff]" />
               </a>
@@ -46,7 +46,7 @@ function SliderContent({activeIndex, sliderImage}) {
               >
                 <span class="w-56 h-56 rounded-full rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0  ease-out duration-500 transition-all translate-y-[120%] mb-9 mr-9 group-hover:mr-0 group-hover:mb-32 group-hover:-translate-x-[13%]"></span>
                 <span class="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">
-                  Button Text
+                  Read More
                 </span>
               </a>
             </div>
