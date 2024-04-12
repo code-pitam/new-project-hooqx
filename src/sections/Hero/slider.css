@@ -163,6 +163,12 @@
 }
 
 
+@media (max-width: 780px){
+   .s-content p{
+margin-bottom: 20px;   
+} 
+}
+
 
 
 @media only screen and (max-width: 950px) {
@@ -189,7 +195,7 @@
 
  .s-content .slide-left p{
     text-align: center;
-    margin: 10px auto;
+    /* margin: 10px auto; */
  }
 }
 
