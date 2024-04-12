@@ -64,7 +64,7 @@ function Navbar() {
           >
             <CiMenuFries />
           </div>
-          <BiSearchAlt className="text-2xl"/>
+          <BiSearchAlt className="text-2xl" />
 
           <span className="p-3 rounded-full max-md:hidden   bg-purple-900 ml-4">
             <MdPhoneInTalk className="  text-3xl" />
@@ -74,7 +74,7 @@ function Navbar() {
       </div>
 
       <div
-        className={` navbar-side transition-display ease-in-out delay-1000 duration-1000 fixed text-white z-[999999] w-[100vw]  h-screen bg-[rgba(8, 8, 8, 0.84)] ${
+        className={` animate-fade-right navbar-side transition-display ease-in-out delay-1000 duration-1000 fixed text-white z-[999999] w-[100vw]  h-screen bg-[rgba(8, 8, 8, 0.84)] ${
           isActive ? "block" : "hidden"
         }`}
         onClick={ToggleClass}

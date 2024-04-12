@@ -279,3 +279,19 @@ transform: rotate(10deg)
     }
     
 }
+.card::before{
+    top: 5px;
+    position: absolute;
+    content: "02";
+    color: transparent;
+    opacity: 0.15;
+    font-size: 48px;
+    -webkit-text-stroke: 1px #75429c;
+    line-height: 45px;
+    font-weight: 700;
+    counter-increment: my-sec-counter;
+    /* content: counters(my-sec-counter, ".", decimal-leading-zero); */
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+right: 5px;
+}

@@ -9,15 +9,15 @@ function SliderContent({activeIndex, sliderImage}) {
         <div
           className={`${
             index === activeIndex ? "slides active " : "inactive"
-          } animate-jump animate-once animate-duration-[4000ms] animate-ease-linear `}
+          } `}
         >
           <div
             style={{
               background: `url(${slide.urls})`,
             }}
-            className={`  s-content text-center overflow-hidden bg-black flex flex-col leading-5 pt-[250px] pb-[250px] bg-[url(${slide.urls})]  bg-cover bg-no-repeat bg-center`}
+            className={`  s-content text-center overflow-hidden bg-black flex flex-col leading-5 pt-[300px] pb-[300px] bg-[url(${slide.urls})]  bg-cover bg-no-repeat bg-right`}
           >
-            <div className="slide-left  z-40">
+            <div className="slide-left  z-40 animate-fade-up animate-once animate-duration-[2000ms]">
               {slide?.title.map((item) => {
                 return (
                   <>
@@ -29,10 +29,10 @@ function SliderContent({activeIndex, sliderImage}) {
                 );
               })}
             </div>
-            <div className="flex  gap-8 z-50">
+            <div className="flex  gap-8 z-50 animate-fade-up animate-once animate-duration-[2000ms]">
               <a
                 href="#_"
-                class="relative hero-button item-center  inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-gradient-to-r from-[#524cff] to-[#7234a8] rounded hover:bg-white group"
+                class="relative hero-button item-center  inline-flex items-center justify-start px-10 py-4 overflow-hidden font-medium transition-all bg-gradient-to-r from-[#524cff] to-[#7234a8] rounded hover:bg-white group"
               >
                 <span class="w-56 h-56 rounded-full rotate-[-40deg] bg-white absolute bottom-0 left-0  ease-out duration-500 transition-all translate-y-[120%] mb-9 mr-9 group-hover:mr-0 group-hover:mb-32 group-hover:-translate-x-[13%]"></span>
                 <span class="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-[#524cff]">
@@ -42,7 +42,7 @@ function SliderContent({activeIndex, sliderImage}) {
               </a>
               <a
                 href="#_"
-                class="relative max-md:hidden inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all rounded border-solid border-[1px] border-white group"
+                class="relative max-md:hidden inline-flex items-center justify-start px-10 py-4 overflow-hidden font-medium transition-all rounded border-solid border-[1px] border-white group"
               >
                 <span class="w-56 h-56 rounded-full rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0  ease-out duration-500 transition-all translate-y-[120%] mb-9 mr-9 group-hover:mr-0 group-hover:mb-32 group-hover:-translate-x-[13%]"></span>
                 <span class="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">
