@@ -21,7 +21,7 @@ function SliderContent({activeIndex, sliderImage}) {
               {slide?.title.map((item) => {
                 return (
                   <>
-                    <p className="text-6xl -mb-10 text-[#E5E0D8] animate-fade-up animate-once  animate-duration-1000 animate-delay-200 animate-ease-in  font-extrabold ">
+                    <p className="text-6xl -mb-10 text-[#E5E0D8] animate-fade-up animate-once mt-[-20px] max-md:mt-[-30px] animate-duration-1000 animate-delay-200 animate-ease-in  font-extrabold ">
                       {item}
                     </p>
                     <br />
