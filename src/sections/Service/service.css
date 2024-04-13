@@ -1,0 +1,115 @@
+.service-t-h {
+  background: linear-gradient(45deg, #75429c 0%, #6600d3 100%);
+}
+
+.service-card {
+  position: relative;
+  margin-bottom: 30px;
+  transition: all 400ms ease;
+  box-shadow: 0 0px 30px rgba(30, 13, 81, 0.08);
+  border-radius: 0 0 60px 8px !important;
+  padding-bottom: 30px;
+}
+
+
+
+.service-card-inner::before{
+
+     top: 5px;
+    position: absolute;
+    content: "02";
+    color: transparent;
+    opacity: 0.15;
+    font-size: 81px;
+    -webkit-text-stroke: 1px #75429c;
+    line-height: 45px;
+    font-weight: 700;
+    counter-increment: my-sec-counter;
+    /* content: counters(my-sec-counter, ".", decimal-leading-zero); */
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+right: 5px;
+}
+.service-card-img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #0d1525;
+  border-radius: 10px 10px 0 0;
+}
+.service-card-img img:hover {
+  opacity: 0.3;
+  transform: scale(1.05);
+}
+.service-card-img img {
+    height: auto;
+  width: 100%;
+  transition: all 500ms ease;
+}
+
+.service-icon-box {
+  position: absolute;
+  background: linear-gradient(45deg, #75429c 0%, #6600d3 100%);
+  width: 80px;
+  height: 80px;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  left: 30px;
+  top: -40px;
+  z-index: 1;
+  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+
+.service-section-footer{
+    display: inline-block;
+  background: var(--bg-silver);
+  padding: 12px 42px;
+  position: relative;
+  background-color: #fff !important;
+}
+.service-section-footer p{
+    font-size: 18px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+.service-section-footer::before{
+    content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #75429c;
+  left: 0;
+  top: 0;
+  -moz-transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.service-section-footer::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #75429c;
+    right: 0;
+    bottom: 0;
+    -moz-transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.service-section-footer:hover:before{
+    height: 100%;
+    opacity: 0.3;
+}
+.service-section-footer:hover::after{
+    height: 100%;
+    opacity: 0.3;
+}

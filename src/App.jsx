@@ -6,6 +6,7 @@ import { ThemeProvider } from './contexts/theme';
 import { useEffect, useState } from 'react';
 import ThemeBtn from './components/ThemeBtn';
 import About from './sections/About/About';
+import Service from './sections/Service/Service';
 
 function App() {
   const [themeMode, setThemeMode] = useState("light")
@@ -36,11 +37,11 @@ document.querySelector("html").classList.add(themeMode);
           <LowerCard />
         </section>
         <section className="padding-x pt-14 pb-16   relative ">
-          <About/>
+          <About />
         </section>
 
-        <section className="padding-x pt-24 pb-20   bg-vector bg-cover ">
-          service
+        <section className="padding-x pt-24 pb-20 realative bg-[#F1F3F8]">
+          <Service />
         </section>
       </main>
     </ThemeProvider>
