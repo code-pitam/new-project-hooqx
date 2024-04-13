@@ -7,7 +7,10 @@ import { useEffect, useState } from 'react';
 import ThemeBtn from './components/ThemeBtn';
 import About from './sections/About/About';
 import Service from './sections/Service/Service';
-
+import Benefits from './sections/Benefits/Benefits';
+import { benefits2, work1 } from './assets/images';
+import WorkingProcess from './sections/Working-Process/WorkingProcess';
+import Footer from './components/Footer';
 function App() {
   const [themeMode, setThemeMode] = useState("light")
 
@@ -42,6 +45,42 @@ document.querySelector("html").classList.add(themeMode);
 
         <section className="padding-x pt-24 pb-20 realative bg-[#F1F3F8]">
           <Service />
+        </section>
+        <section
+          style={{
+            background: `url(${benefits2})`,
+          }}
+          className="padding-x pt-24 relative overflow-hidden section-benefits  bg-no-repeat bg-center bg-cover pb-20 realative bg-[#F1F3F8]"
+        >
+          <div className="why-choose-us">
+            <img
+              decoding="async"
+              src="https://hooqx.com/wp-content/uploads/2024/02/why-choose-us-style2-obj1.png"
+              alt=""
+              class="wp-dark-mode-ignore"
+            ></img>
+          </div>
+          <div className="why-choose-us2">
+            <img
+              decoding="async"
+              src="https://hooqx.com/wp-content/uploads/2024/02/why-choose-us-style2-obj1.png"
+              alt=""
+              class="wp-dark-mode-ignore"
+            ></img>
+          </div>
+          <Benefits />
+        </section>
+        <section
+          style={{
+            background: `url(${work1})`,
+          }}
+          className="bg-[#0d1525] section-working-process padding-x pt-24 relative overflow-hidden  bg-no-repeat bg-center bg-cover pb-20 realative "
+        >
+          <WorkingProcess />
+        </section>
+
+        <section className="bg-[#0D1625] padding-x pt-24 relative overflow-hidden">
+          <Footer />
         </section>
       </main>
     </ThemeProvider>

@@ -6,7 +6,7 @@ import { about1, about2, about3, about4 } from "../../assets/images";
 
 function About() {
   return (
-    <div className="w-full flex   max-lg:flex-col p-10 text-black max-container gap-8">
+    <div className="w-full flex  max-sm:p-3  max-lg:flex-col p-10 text-black max-container gap-8">
       <div className="about4">
         <img src={about4} alt="" />
       </div>

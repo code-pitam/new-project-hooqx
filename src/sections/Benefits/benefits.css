@@ -1,0 +1,52 @@
+.bene-right img{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%, 0 85%);
+z-index: 1000 !important;
+}
+.bane-right{
+    z-index: 99;
+}
+
+.benefit-section-main::after{
+        content: "";
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    background: #000000;
+    left: -40px;
+    top: 0;
+    opacity: 0.1;
+    
+    transform: skew(20deg, 0);
+ 
+}
+
+.bene-icon{
+        font-size: 46px;
+    color: #75429c;
+    position: relative;
+    background: #fff;
+    height: 68px;
+    width: 68px;
+    line-height: 68px;
+    text-align: center;
+    border-radius: 6px;
+    display: inline-block;
+}
+.bene-icon::after{
+    content: "";
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    opacity: 0.1;
+    background: #ffffff;
+    left: 15px;
+    top: -10px;
+    animation: pulse infinite 0.8s;
+    -moz-transition: all 400ms ease-out 0s;
+    -webkit-transition: all 400ms ease-out 0s;
+    -ms-transition: all 400ms ease-out 0s;
+    -o-transition: all 400ms ease-out 0s;
+    transition: all 400ms ease-out 0s;
+    z-index: 0;
+    border-radius: 6px;
+}

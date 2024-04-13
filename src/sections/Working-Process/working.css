@@ -1,0 +1,42 @@
+.working-inner-card{
+        position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 57px 0px rgba(0,0,0,0.1);
+    height: 148px;
+    width: 148px;
+    line-height: 148px;
+    margin: 0 auto;
+    z-index: 1;
+    border-radius: 20px 8px 20px 0px;
+}
+
+.wi-i-corner{
+   position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #75429c;
+    z-index: 100000000;
+    border-radius: 6px; 
+}
+.wi-i-corner::before{
+    content: "";
+        position: absolute;
+    top: -1;
+    left: 14px;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    -moz-transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
