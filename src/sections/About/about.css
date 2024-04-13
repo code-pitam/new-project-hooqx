@@ -1,0 +1,109 @@
+.about2 {
+  width: 520px;
+  clip-path: polygon(0% 5%, 100% 0, 100% 87%, 100% 100%, 10% 100%);
+  float: right;
+  margin-bottom: 150px;
+  z-index: 1000 !important;
+}
+.about3 {
+  will-change: transform;
+  transform: perspective(1200px) rotateX(1.37deg) rotateY(-2.83deg)
+    scale3d(1, 1, 1);
+  position: absolute;
+  left: 0;
+  width: 420px;
+  top: 240px;
+  z-index: 1;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.about4 {
+  position: absolute;
+  top: -185px;
+  right: 56px;
+  opacity: 0.05;
+  animation: float-obj-y infinite 3s;
+}
+.about4 img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@keyframes float-obj-y {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+
+.years-of-experience{
+    position: absolute;
+    bottom: 110px;
+    right: 60px;
+    width: 275px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: center;
+    -ms-flex-align: start;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.07);
+    border-right: 8px solid #75429c;
+    padding-left: 45px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    z-index: 1;
+}
+.years-of-experience span{
+        font-weight: bold;
+    line-height: 1;
+    display: block;
+    font-size: 64px;
+    color:#75429c;
+    margin-right: 20px;
+    margin-top: 0px;
+    letter-spacing: -0.04em;
+}
+
+
+/* .years-of-experience:after {
+    right: auto;
+    left: -120px ;
+    top: -650px;
+    width: 170px;
+    height: 200px;
+background-image: radial-gradient(#75429c 1px, #ff000000 2.2px);
+    background-size: 0.7rem 0.7rem;
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 260px;
+   
+    z-index: -1000;
+    opacity: 0.3;
+    animation: float-y-axis 4s infinite alternate;
+} */
+@media (min-width:1200px){
+
+    .years-of-experience{
+    bottom: 70px;}
+}
