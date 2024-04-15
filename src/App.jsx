@@ -12,6 +12,7 @@ import { benefits2, work1 } from './assets/images';
 import WorkingProcess from './sections/Working-Process/WorkingProcess';
 import Footer from './components/Footer';
 import Counter from './sections/Counter/Counter';
+import Testimonials from './sections/Testimonials/Testimonials';
 function App() {
   const [themeMode, setThemeMode] = useState("light")
 
@@ -79,7 +80,10 @@ document.querySelector("html").classList.add(themeMode);
         >
           <WorkingProcess />
         </section>
-       
+        <section className="bg-white padding-x pt-24 relative overflow-hidden">
+          <Counter />
+        </section>
+      
         <section className="bg-[#0D1625] padding-x pt-24 relative overflow-hidden">
           <Footer />
         </section>
