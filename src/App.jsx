@@ -13,6 +13,7 @@ import WorkingProcess from './sections/Working-Process/WorkingProcess';
 import Footer from './components/Footer';
 import Counter from './sections/Counter/Counter';
 import Testimonials from './sections/Testimonials/Testimonials';
+import CallBack from './sections/CallBack/CallBack';
 function App() {
   const [themeMode, setThemeMode] = useState("light")
 
@@ -83,7 +84,12 @@ document.querySelector("html").classList.add(themeMode);
         <section className="bg-white padding-x pt-24 relative overflow-hidden">
           <Counter />
         </section>
-      
+        <section className="z-[1] bg-blue-600 padding-x pt-24 relative overflow-hidden">
+          <Testimonials />
+        </section>
+        <section className="z-10 -mt-[300px]  padding-x pt-24 relative overflow-hidden">
+          <CallBack/>
+        </section>
         <section className="bg-[#0D1625] padding-x pt-24 relative overflow-hidden">
           <Footer />
         </section>

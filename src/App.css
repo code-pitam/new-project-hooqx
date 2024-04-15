@@ -76,3 +76,14 @@
 padding-bottom: 105px;
 padding-top: 110px;
 }
+.callback{
+      background: white;
+    background-image: url(../src/assets/images/1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    position: relative;
+    border-radius: 12px;
+    padding-top: 50px;
+
+}

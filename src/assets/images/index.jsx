@@ -9,5 +9,7 @@ import service1 from "./service_sm_03.jpg";
 import benefits from "./divider-img2.jpg";
 import benefits2 from "./4-3.jpg";
 import work1 from "./abs-bg6-1.png";
+import callback from "./request-a-call-back-im1.jpg";
+import callback2 from "./1.png"
 // import about5 from "./"
-export {slider1, slider2, slider3, about1, about2, about3, about4, service1, benefits, benefits2, work1}
+export {slider1, slider2, slider3, about1,callback2, about2,callback, about3, about4, service1, benefits, benefits2, work1}
